@@ -1,5 +1,6 @@
 # Rocket Class
 # Represents a single rocket and stores its physical properties
+import math
 class Rocket:
     def __init__(self, name, mass, length, thrust, diameter, drag_coefficient, burn_time, propellant_type):
         self.name = name
@@ -11,3 +12,6 @@ class Rocket:
         self.burn_time = burn_time  # in seconds
         self.propellant_type = propellant_type  # e.g., "liquid", "solid"
         
+    def frontal_area(self):
+        radius = self.diameter / 2
+        return math.pi * radius**2

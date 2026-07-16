@@ -13,3 +13,4 @@ test_rocket = Rocket(
 
 print(test_rocket.name)
 print(test_rocket.mass)
+print(test_rocket.frontal_area())
