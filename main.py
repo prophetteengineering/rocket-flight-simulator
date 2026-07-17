@@ -14,3 +14,6 @@ test_rocket = Rocket(
 print(test_rocket.name)
 print(test_rocket.mass)
 print(test_rocket.frontal_area())
+from forces import weight_force
+weight = weight_force(test_rocket, 9.81)
+print(weight)
