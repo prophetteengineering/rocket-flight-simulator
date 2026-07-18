@@ -22,3 +22,7 @@ print(weight)
 from forces import drag_force
 drag =drag_force(test_rocket, -10, 10)
 print(drag)
+
+from forces import thrust_force
+thrust=thrust_force(test_rocket, 3.2)
+print(thrust)

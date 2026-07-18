@@ -13,3 +13,9 @@ def drag_force(rocket, velocity, air_density):
     else:
         return 0
 
+#Thrust Force Equation
+def thrust_force(rocket, current_time):
+    if current_time < rocket.burn_time:
+        return rocket.thrust
+    else:
+        return 0
