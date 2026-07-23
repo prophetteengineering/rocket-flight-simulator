@@ -19,3 +19,12 @@ def thrust_force(rocket, current_time):
         return rocket.thrust
     else:
         return 0
+    
+
+#Net Force Equation
+def net_force(thrust, weight, drag):
+    return thrust + weight + drag
+
+#Acceleration F=ma
+def acceleration(rocket, net):
+    return net/rocket.mass

@@ -26,3 +26,11 @@ print(drag)
 from forces import thrust_force
 thrust=thrust_force(test_rocket, 3.2)
 print(thrust)
+
+from forces import net_force
+net=net_force(thrust, weight, drag)
+print(net)
+
+from forces import acceleration
+xcel=acceleration(test_rocket, net)
+print(xcel)
