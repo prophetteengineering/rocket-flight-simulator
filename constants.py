@@ -1,0 +1,3 @@
+GRAVITY = 9.81 #m/s^2
+SEA_LEVEL_AIR_DENSITY = 1.225 #kg/m^3
+TIME_STEP = 0.01 # s

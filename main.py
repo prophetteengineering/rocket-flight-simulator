@@ -34,3 +34,7 @@ print(net)
 from forces import acceleration
 xcel=acceleration(test_rocket, net)
 print(xcel)
+
+from simulation import run_simulation
+time_history,altitude_history, velocity_history, acceleration_history, impact_velocity = run_simulation(test_rocket)
+print(time_history,altitude_history, velocity_history, acceleration_history, impact_velocity,impact_velocity)
