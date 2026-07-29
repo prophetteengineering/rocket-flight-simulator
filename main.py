@@ -20,7 +20,10 @@ print(f"Flight Time: {time_history[-1]:.2f} s")
 print(f"Maximum Altitude: {max(altitude_history):.2f} m")
 print(f"Maximum Velocity: {max(velocity_history):.2f} m/s")
 print(f"Maximum Acceleration: {max(acceleration_history):.2f} m/s^2")
-print(f"Impact Velocity: {impact_velocity:.2f} m/s")
+if impact_velocity is None:
+    print("Impact Velocity: No flight")
+else:
+    print(f"Impact Velocity: {impact_velocity:.2f} m/s")
 
 import matplotlib.pyplot as plt
 plt.plot(time_history, altitude_history)

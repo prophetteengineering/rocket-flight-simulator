@@ -3,6 +3,7 @@ from forces import ( weight_force, drag_force, thrust_force, net_force, accelera
 
 def run_simulation(rocket):
     #Initial Conditions 
+    maximum_simulation_time = 60.0
     time = 0.0
     altitude = 0.0
     velocity = 0.0
@@ -15,6 +16,9 @@ def run_simulation(rocket):
     acceleration_history = []
     #Simulation Loop
     while not launched or altitude > 0:
+        #Failed Launch Protection
+        if time >= maximum_simulation_time:
+            break
         # Calculate thrust
         thrust = thrust_force(rocket , time)
         # Calculate weight
