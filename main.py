@@ -31,18 +31,24 @@ plt.title("Altitude vs Time")
 plt.xlabel("Time(s)")
 plt.ylabel("Altitude (m)")
 plt.grid(True)
+plt.savefig("figures/altitude_vs_time.png")
 plt.show()
+
+
 
 plt.plot(time_history, velocity_history)
 plt.title("Velocity vs Time")
 plt.xlabel("Time(s)")
 plt.ylabel("Velocity (m/s)")
 plt.grid(True)
+plt.savefig("figures/velocity_vs_time.png")
 plt.show()
+
 
 plt.plot(time_history, acceleration_history)
 plt.title("Acceleration vs Time")
 plt.xlabel("Time(s)")
 plt.ylabel("Acceleration (m/s^2)")
 plt.grid(True)
+plt.savefig("figures/acceleration_vs_time.png")
 plt.show()
