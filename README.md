@@ -31,8 +31,11 @@ rocket-flight-simulator/
 ├── figures/            # Generated simulation plots
 ├── requirements.txt    # Python dependencies
 ├── README.md           # Project documentation
-└── .gitignore          # Git ignore configuration
+└── .gitignore          # Git ignore 
+configuration
+├── LICENSE             # MIT License
 ```
+
 
 ---
 
@@ -233,3 +236,8 @@ Impact Velocity: -60.71 m/s
 - Two-dimensional trajectory simulation
 - Guidance, Navigation, and Control (GNC)
 
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
